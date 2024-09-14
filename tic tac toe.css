@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #548687;
+   text-align: center;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 70vh;
+    width: 70vw;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position:relative; */
+}
+.boxes{
+    /* position:absolute; */
+     height: 60vmin;
+    width: 60vmin;
+    gap:10px; 
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    height: 20vmin;
+    width: 18vmin;
+    font-size: xxx-large;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    color: red;
+    background-color:bisque ;
+    box-shadow: 0px 0px 20px rgb(11, 11, 11);
+
+}
+.reset-btn,.new-btn{
+    /* margin-top: 10px; */
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color:red;
+    font-weight: bolder;
+}
+.new-btn{
+    margin-top: 20px;
+}
+.msg-container{
+    margin-top: 5px;
+}
+.hide{
+    display: none;
+}
+@media(max-width:600px){
+    .main{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        height: 50vh;
+        width: 90vw;
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* position:relative; */
+    }
+    .boxes{
+        /* position:absolute; */
+         height: 60vmin;
+        width: 75vmin;
+        gap:10px; 
+        /* background-color: red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .box{
+        height: 25vmin;
+        width: 20vmin;
+        font-size: xxx-large;
+        padding: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        border: none;
+        color: red;
+        background-color:bisque ;
+        box-shadow: 0px 0px 20px rgb(11, 11, 11);
+    
+    }
+    .reset-btn,.new-btn{
+        /* margin-top: 10px; */
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: black;
+        color:red;
+        font-weight: bolder;
+    }
+    .new-btn{
+        margin-top: 60px;
+        font-size:x-large;
+    }
+    .reset-btn{
+        margin-top: 30px;
+        font-size:x-large;
+    }
+    body h1{
+        margin-top: 20px;
+        font-size: xxx-large;
+    }
+    .msg-container{
+        font-size: x-large;
+    }
+}
